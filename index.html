@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Contact form</title>
+</head>
+<body>
+
+  <form action="">
+    <p>Contact Us</p>
+
+  <div class="section1">
+    <div class="name">
+      <label for="firstName">First Name <span>*</span></label>
+      <input type="text" name="firstName" id="">
+      <div class="fError error"></div>
+    </div>
+
+    <div class="name">
+      <label for="lasttName"> Last Name <span>*</span></label>
+      <input type="text" name="lastName" id="">
+      <div class="lError error"></div>
+    </div>
+  </div>
+
+  <div class="section2">
+    <label for="email">Email Address <span>*</span></label>
+    <input type="text" name="email" id="emailInput">
+    <div class="emailError error"></div>
+  </div>
+
+  <div class="section3">
+    <label for="query">Query Type <span>*</span></label>
+    <div class="radio">
+      <div class="parentDiv selected">
+        <input type="radio" name="query" id="generalEnquiry">General Enquiry
+        <img class="generalEnquiryImg" src="assets/images/icon-radio-selected.svg" alt="">
+      </div>
+
+      <div class="parentDiv selected">
+        <input type="radio" name="query" id="supportRequest">Support Request
+        <img class="supportRequestImg" src="assets/images/icon-radio-selected.svg" alt="">
+      </div>
+      </div>
+      <div class="queryError error"></div>
+  </div>
+
+  <div class="section4">
+    <label for="message">Message <span>*</span></label>
+    <textarea name="message" id=""></textarea>
+    <div class="messageError error"></div>
+  </div>
+
+  <div class="section5">
+    <input type="checkbox" name="" id="">
+    <div class="checkmark"></div>
+    <img class="checkmarkImg" src="assets/images/icon-checkbox-check.svg" alt="">
+     I consent to being contacted by the team <span>*</span>
+  </div>
+  <div class="checkError error"></div>
+
+  
+  <input type="button" value="Submit" onclick="validation">
+  </form>
+  
+
+  <div class="popup">
+    <div>
+      <img src="assets/images/icon-success-check.svg" alt="">
+      Message Sent!
+    </div>
+  Thanks for completing the form. We'll be in touch soon!
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
